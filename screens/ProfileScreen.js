@@ -40,8 +40,6 @@ export default function HomeScreen({ navigation }) {
         </View>
         <View
           style={{
-            justifyContent: 'center',
-            alignItems: 'center',
             marginTop: 10,
             marginLeft: 30,
           }}>
