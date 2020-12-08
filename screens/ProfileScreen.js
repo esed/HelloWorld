@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import { Button, Divider, Text } from 'react-native-paper';
 import { createStackNavigator } from '@react-navigation/stack';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function HomeScreen({ navigation }) {
   {
@@ -36,7 +37,10 @@ export default function HomeScreen({ navigation }) {
             }}
           />
           <Text style={styles.textHeader}>Edgars Sedovs</Text>
-          <Text style={styles.textInput}>Riga, Latvia</Text>
+          <View style={styles.textAlign}>
+          <Ionicons name="ios-flag" size={27} color="white" />
+          <Text style={styles.textInput}> Riga, Latvia</Text>
+          </View>
         </View>
         <View
           style={{
@@ -77,6 +81,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: 'white',
     alignSelf: 'stretch',
+    },
+  textAlign: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   textInput: {
     fontSize: 15,
@@ -86,6 +94,7 @@ const styles = StyleSheet.create({
     color: 'white',
     alignSelf: 'stretch',
   },
+  
   textInputDetails: {
     fontSize: 20,
     marginTop: 2,

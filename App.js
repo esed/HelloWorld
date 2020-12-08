@@ -80,7 +80,7 @@ export default function App() {
             if (route.name === 'Home') {
               iconName = focused ? 'ios-home' : 'ios-home';
             } else if (route.name === 'Profile') {
-              iconName = focused ? 'ios-document' : 'ios-document';
+              iconName = focused ? 'ios-contact' : 'ios-contact';
             }
 
             // You can return any component that you like here!

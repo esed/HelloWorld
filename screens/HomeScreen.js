@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import { Button } from 'react-native-paper';
 import { createStackNavigator } from '@react-navigation/stack';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function HomeScreen({ navigation }) {
   {
@@ -41,9 +42,10 @@ export default function HomeScreen({ navigation }) {
           onPress={() => {
             navigation.navigate('Profile');
           }}>
-          Profile
+          <Ionicons name="ios-contact" size={20} color="white" />
         </Button>
         <View style={styles.textAlign}>
+        
           <Button
             style={{ marginTop: 10, width: 150 }}
             mode="contained"
@@ -51,7 +53,7 @@ export default function HomeScreen({ navigation }) {
             onPress={() => {
               Linking.openURL('https://www.linkedin.com/in/edgarssedovs');
             }}>
-            LinkedIn
+            <Ionicons name="logo-linkedin" size={20} color="white" />
           </Button>
           <Button
             style={{ marginTop: 10, width: 150 }}
@@ -60,7 +62,7 @@ export default function HomeScreen({ navigation }) {
             onPress={() => {
               Linking.openURL('https://www.facebook.com/edgars.sedovs');
             }}>
-            Facebook
+            <Ionicons name="logo-facebook" size={20} color="white" />
           </Button>
         </View>
         <View style={styles.textAlign}>
@@ -71,7 +73,7 @@ export default function HomeScreen({ navigation }) {
             onPress={() => {
               Linking.openURL('https://twitter.com/EdgarsSD');
             }}>
-            Twitter
+            <Ionicons name="logo-twitter" size={20} color="white" />
           </Button>
           <Button
             style={{ marginTop: 10, width: 150 }}
@@ -80,7 +82,7 @@ export default function HomeScreen({ navigation }) {
             onPress={() => {
               Linking.openURL('https://www.instagram.com/edgars_sedovs');
             }}>
-            Instagram
+            <Ionicons name="logo-instagram" size={20} color="white" />
           </Button>
         </View>
       </View>
